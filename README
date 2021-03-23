@@ -1,5 +1,9 @@
-This is a deep learning mini-project from Francis Chollet's book "Deep Learning with Python" to help me 
-get familiar with keras and tensorflow. This network aims to tackle the classical machine learning problem 
+These are a series of deep learning mini-projects from Francois Chollet's book "Deep Learning with Python" to help me 
+get familiar with keras and neural networks. 
+
+digit_class.py
+
+This network aims to tackle the classical machine learning problem 
 of handwritten digit classification. The network consists of 2 dense layers with RELU and softmax 
 activation functions respectively. I used the RMSprop optimization function and categorical crossentropy 
 loss function for backpropogation. The network was trained in 10 epochs with a batch size of 64 and achieved 
@@ -7,3 +11,11 @@ loss function for backpropogation. The network was trained in 10 epochs with a b
 neural networks and it's amazing to me how keras is able to abstract all of this for the average developer. 
 I do wonder if there are any performance benefits to writing out all of the tensor operations in Tensorflow 
 on its own.
+
+movie_review.py
+This is another simple neural network that uses 2 16-unit relu layers and 1 2-unit sigmoid layer for a binary
+classification problem. It simply classifies movie reviews as either good or bad. Preprocessing the data was 
+more of a pain this time and required vectorization of a dictionary of words. I learned that the last layer of 
+any binary classification problem is a 2-unit sigmoid layer which gives the probability of yes or no. The 
+standard loss function to use is binary_crossentropy. Lastly, it is important to monitor your data as it's trained
+to make sure your network is not overfitted.
