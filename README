@@ -1,0 +1,9 @@
+This is a deep learning mini-project from Francis Chollet's book "Deep Learning with Python" to help me 
+get familiar with keras and tensorflow. This network aims to tackle the classical machine learning problem 
+of handwritten digit classification. The network consists of 2 dense layers with RELU and softmax 
+activation functions respectively. I used the RMSprop optimization function and categorical crossentropy 
+loss function for backpropogation. The network was trained in 10 epochs with a batch size of 64 and achieved 
+99.72% accuracy for the training set and 98.14% accuracy for the test set. I've learned about the math behind
+neural networks and it's amazing to me how keras is able to abstract all of this for the average developer. 
+I do wonder if there are any performance benefits to writing out all of the tensor operations in Tensorflow 
+on its own.
